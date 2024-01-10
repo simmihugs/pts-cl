@@ -1,8 +1,5 @@
 #+TITLE: PTS checker
 
-
-[[file:lisp.png]]
-
 * ~pts~ checker
   Check pts files for errors
 * TODO issues [0/2]

@@ -1,0 +1,1 @@
+sbcl.exe --load pts.asd --eval '(ql:quickload :pts)' --eval '(asdf:make :pts)' --eval '(quit)'

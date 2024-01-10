@@ -1,0 +1,7 @@
+#+TITLE: PTS checker
+
+* ~pts~ checker
+  Check pts files for errors
+* TODO issues [0/2]
+** TODO Refactoring [/]
+** TODO Fix readme [/]

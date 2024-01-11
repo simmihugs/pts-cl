@@ -1,12 +1,8 @@
 (asdf:defsystem "pts"
   :description "A pts error checker"
-  :depends-on ("termcolor"
-	       "str"
-	       "clingon"
+  :depends-on ("clingon"
 	       "cxml"
-	       "cl-date-time-parser"
-	       "cl-ppcre"
-	       "serapeum")
+	       "cl-date-time-parser")
   :serial t  
   :build-operation "program-op"
   :build-pathname "build/pts2"
@@ -14,7 +10,9 @@
   :components ((:module "src"
                 :serial t
                 :components ((:file "package")
+			     (:file "xml")
 			     (:file "data")
+			     (:file "test-data")
 			     (:file "main")))))
 
 

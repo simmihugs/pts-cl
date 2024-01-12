@@ -1,3 +1,4 @@
+(declaim (optimize (speed 3) (debug 0) (safety 0)))
 (in-package :pts)
 
 (defparameter *test-path*
@@ -18,6 +19,15 @@
    :get-child #'(lambda (define)
 		  (dom:item (remove-whitespace-nodes (dom:child-nodes define)) 0)
 		  )))
+
+
+;; (loop :for i :across (remove-if-not
+;; 		      #'(lambda (x) (string= "siEvent" (dom:node-name x)))
+;; 		      *test-defines*)
+;;       :do (format t "~a~3%" (create-sievent i))
+;;       )
+
+
 
 (defparameter *test-vaevents*
   (filter-events *test-DEFINES* "vaEvent"))

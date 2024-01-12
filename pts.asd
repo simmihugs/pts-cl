@@ -2,7 +2,8 @@
   :description "A pts error checker"
   :depends-on ("clingon"
 	       "cxml"
-	       "cl-date-time-parser")
+	       "cl-date-time-parser"
+	       "str")
   :serial t  
   :build-operation "program-op"
   :build-pathname "build/pts2"
